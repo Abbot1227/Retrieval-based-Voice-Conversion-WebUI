@@ -8,7 +8,8 @@ services:
     volumes:
       - ./weights:/app/assets/weights
       - ./opt:/app/opt
-      # - ./dataset:/app/dataset # you can use this folder in order to provide your dataset for model training
+      - C:\Users\tengr\Desktop\rvcwebui\train:/app/train # Training dataset
+      - C:\Users\tengr\Desktop\rvcwebui\audio:/app/audio # Audio for voice conversion
     ports:
       - 7865:7865
     deploy:
